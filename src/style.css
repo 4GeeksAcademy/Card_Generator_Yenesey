@@ -1,1 +1,44 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: relative; 
+    color: black; 
+}
+
+.simbolo {
+    font-size: 40px;
+    position: absolute;
+}
+
+#simbolo-top {
+    top: 10px;
+    left: 10px;
+}
+
+#simbolo-bottom {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg); /* Uso tranform rotate para rotar el simbolo de la parte de abajo*/
+}
+
+.numero {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
